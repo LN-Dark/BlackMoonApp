@@ -1,0 +1,30 @@
+<vector android:height="24dp" android:viewportHeight="48"
+    android:viewportWidth="48" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000"
+        android:pathData="M27,32l4,3l1,7l3,2"
+        android:strokeColor="#455A64" android:strokeLineJoin="round" android:strokeWidth="2"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M28,26l5,1l1,4l2,2"
+        android:strokeColor="#455A64" android:strokeLineJoin="round" android:strokeWidth="2"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M29,22l5,-2l-3,-5l2,-3"
+        android:strokeColor="#455A64" android:strokeLineJoin="round" android:strokeWidth="2"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M21,32l-4,3l-1,7l-3,2"
+        android:strokeColor="#455A64" android:strokeLineJoin="round" android:strokeWidth="2"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M20,26l-5,1l-1,4l-2,2"
+        android:strokeColor="#455A64" android:strokeLineJoin="round" android:strokeWidth="2"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M19,22l-5,-2l3,-5l-2,-3"
+        android:strokeColor="#455A64" android:strokeLineJoin="round" android:strokeWidth="2"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M39,4c0,0 -14,1 -14,10"
+        android:strokeColor="#4DB6AC" android:strokeWidth="2"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M9,4c0,0 14,1 14,10"
+        android:strokeColor="#4DB6AC" android:strokeWidth="2"/>
+    <path android:fillColor="#00695C" android:pathData="M27.021,20.812c0,1.67 -1.354,3.021 -3.021,3.021l0,0c-1.669,0 -3.021,-1.352 -3.021,-3.021v-5.79C20.979,13.352 22.331,12 24,12l0,0c1.668,0 3.021,1.352 3.021,3.021V20.812z"/>
+    <path android:fillColor="#26A69A" android:pathData="M24,42c-6,0 -7,-22 -7,-22c0,-1.104 4,-2 7,-2s7,0.896 7,2C31,20 30,42 24,42z"/>
+    <path android:fillColor="#00897B" android:pathData="M23,41.773C23.313,41.918 23.646,42 24,42s0.687,-0.082 1,-0.227V18.034C24.669,18.013 24.335,18 24,18s-0.669,0.013 -1,0.034V41.773z"/>
+</vector>

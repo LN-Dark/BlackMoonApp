@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lua.luanegra">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:icon="@drawable/imagem_news"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:roundIcon="@drawable/imagem_news"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:name=".activitys.Salas.Jogos.DefenicoesSalaJogosActivity"/>
+        <activity android:name=".activitys.Salas.Jogos.DefenicoesMainSalaJogosActivity" />
+        <activity android:name=".activitys.Salas.Jogos.CoresSalaJogosActivity" />
+        <activity android:name=".activitys.Salas.Jogos.ChangeSalaJogosCreatorActivity" />
+        <activity android:name=".activitys.Salas.Jogos.BloquearUserSalaJogosActivity" />
+        <activity android:name=".activitys.Salas.Jogos.AdminsSalaJogosActivity" />
+        <activity android:name=".activitys.Salas.Publicas.PedidosSalaPublicaActivity" />
+        <activity android:name=".activitys.Salas.Publicas.DefenicoesSalaPublicaActivity" />
+        <activity android:name=".activitys.Salas.Publicas.DefenicoesMainSalaPublicaActivity" />
+        <activity android:name=".activitys.Salas.Publicas.CoresSalaPublicaActivity" />
+        <activity android:name=".activitys.Salas.Publicas.ChangeSalaPublicaCreatorActivity" />
+        <activity android:name=".activitys.Salas.Publicas.BloquearUserSalaPublicaActivity" />
+        <activity android:name=".activitys.Salas.Publicas.AdminsSalaPublicaActivity" />
+        <activity android:name=".activitys.Salas.Publicas.SalaPublicaActivity" />
+        <activity android:name=".activitys.Admins.PedidoCriacaoSalasAdminActivity" />
+        <activity android:name=".activitys.Admins.NovasFuncionalidadesAdminActivity" />
+        <activity android:name=".activitys.Admins.PatronosAdminActivity" />
+        <activity android:name=".activitys.Admins.RegistoAcessoAdminsActivity" />
+
+        <service
+            android:name=".tools.OnlineService"
+            android:stopWithTask="false" />
+
+        <activity android:name=".activitys.Salas.Privadas.ChangeSalaCreatorActivity" />
+        <activity android:name=".activitys.Admins.BloquearUtilizadorAdminActivity" />
+        <activity android:name=".activitys.Salas.Privadas.DefenicoesMainSalaPrivadaActivity" />
+
+        <service
+            android:name=".callservice.CallService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.FOREGROUND_SERVICE" />
+
+        <activity android:name=".activitys.TermosDeUtilizacaoActivity" />
+        <activity android:name=".activitys.Salas.Privadas.CoresSalaPrivadaActivity" />
+        <activity android:name=".activitys.Salas.Privadas.AdminsSalaPrivadaActivity" />
+        <activity android:name=".activitys.Salas.Privadas.PedidosSalaPrivadaActivity" />
+        <activity android:name=".activitys.Salas.Privadas.BloquearUserSalaPrivadaActivity" />
+        <activity android:name=".activitys.Salas.Privadas.DefenicoesSalaPrivadaActivity" />
+        <activity android:name=".activitys.Salas.Privadas.SalaPrivadaActivity" />
+        <activity android:name=".activitys.GameDownloadActivity" />
+        <activity
+            android:name=".activitys.WhereToShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.InfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.Admins.LogAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.OPENABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="luanegra.000webhostapp.com"
+                    android:pathPattern="/lua"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.Admins.MemesAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.MemesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.Admins.NotificationAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activitys.Admins.AdminActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activitys.MensagensActivity" />
+        <activity
+            android:name=".activitys.SwagActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activitys.Salas.Jogos.SalasJogosAntigaActivity" />
+
+        <service
+            android:name=".callservice.MyFirebaseMessagingService"
+            android:exported="false">
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/luanegra_logo" />
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/colorPrimary" />
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="firebase_messaging_auto_init_enabled"
+                android:value="false" />
+            <meta-data
+                android:name="firebase_analytics_collection_enabled"
+                android:value="false" />
+        </service>
+    </application>
+
+</manifest>

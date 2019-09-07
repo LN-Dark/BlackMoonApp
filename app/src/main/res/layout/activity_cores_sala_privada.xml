@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.Salas.Privadas.CoresSalaPrivadaActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            layout="@layout/app_bar_activitys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cor_chatReciever"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="16dp"
+                    android:text="@string/fundo_da_mensagem_do_destinatario"
+                    android:textAlignment="center"
+
+                    android:textSize="13sp"
+                    app:icon="@drawable/cores"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider16"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_cor_chatSender"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cor_chatSender"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="16dp"
+                    android:text="@string/fundo_da_mensagem_de_remetente"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+
+                    app:icon="@drawable/cores"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider16"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_cor_toolbarInferior"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cor_barraMensagens"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="16dp"
+                    android:text="@string/fundo_da_barra_de_mensagens"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+
+                    app:icon="@drawable/cores"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toStartOf="@+id/divider16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_cor_fundo"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cor_dataHora"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="16dp"
+                    android:text="@string/texto_da_data_hora_utilizador"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+
+                    app:icon="@drawable/cores"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toStartOf="@+id/divider16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_cor_barraMensagens"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cor_fundo"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="16dp"
+                    android:text="@string/fundo_da_sala"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+
+                    app:icon="@drawable/cores"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toStartOf="@+id/divider16"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cor_texto"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="16dp"
+                    android:text="@string/texto"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+
+                    app:icon="@drawable/cores"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider16"
+                    app:layout_constraintTop_toTopOf="parent"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cor_toolbarInferior"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="16dp"
+                    android:text="@string/barra_das_op_es"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+
+                    app:icon="@drawable/cores"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider16"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_cor_apresentacao"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cor_toolbarSuperior"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="16dp"
+                    android:text="@string/barra_superior"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+
+                    app:icon="@drawable/cores"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toStartOf="@+id/divider16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_cor_dataHora"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_cor_apresentacao"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="16dp"
+                    android:text="@string/cor_de_apresenta_o"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+
+                    app:icon="@drawable/cores"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider16"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_cor_texto"
+                     />
+
+                <View
+                    android:id="@+id/divider16"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "946364487804",
+    "firebase_url": "https://bdlua-29c71.firebaseio.com",
+    "project_id": "bdlua-29c71",
+    "storage_bucket": "bdlua-29c71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946364487804:android:fc7bd564c5288d1b",
+        "android_client_info": {
+          "package_name": "com.lua.luanegra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946364487804-rtjdc3m39ranmvjjtuboaeeoodiq7nrg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lua.luanegra",
+            "certificate_hash": "8cc98cc8eded8d78b7e967c41c0396bdf8ab7e39"
+          }
+        },
+        {
+          "client_id": "946364487804-n2ni6g63odcom4blrr07mgsdhlpuoko2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lua.luanegra",
+            "certificate_hash": "042aed7e912bb01e8753b956babc447c8aec1e14"
+          }
+        },
+        {
+          "client_id": "946364487804-gunthlqumbu2633rhcdt5jtceuu880ut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxhcKkop5f5Xr4u6qgEo-kvOxWBEhDfy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946364487804-gunthlqumbu2633rhcdt5jtceuu880ut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

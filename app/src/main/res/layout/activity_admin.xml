@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.Admins.AdminActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include
+            layout="@layout/app_bar_activitys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_utilizadores_Patronos"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:contextClickable="true"
+                    android:focusable="true"
+                    android:text="@string/patronos"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGold"
+                    android:textSize="13sp"
+                    app:icon="@drawable/patronos"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toEndOf="@+id/divider8"
+                    app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_AcessoAdmins"
+
+                    android:layout_width="0dp"
+
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/registo_de_acesso_a_admins"
+                    android:textAlignment="center"
+
+                    android:textSize="13sp"
+                    app:icon="@drawable/radar"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toStartOf="@+id/divider8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_GerarRelatorio_admin" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_notificacoes_activity"
+
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/notifica_es"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+                    app:icon="@drawable/toque"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toStartOf="@+id/divider8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_AcessoAdmins" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_fazerVerificacaoUser"
+
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/verificar_base_de_dados"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+                    app:icon="@drawable/backup"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider8"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_salaAdmin_activity" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_VisualizarPedidoFuncionalidade"
+
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/pedidos_funcionalidades"
+                    android:textAlignment="center"
+
+                    android:textSize="13sp"
+                    app:icon="@drawable/drill"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider8"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_memes_activity" />
+
+                <com.google.android.material.button.MaterialButton
+
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/salas_com_report"
+                    android:textAlignment="center"
+
+                    android:textSize="13sp"
+                    app:icon="@drawable/salas_icon_tabs"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toStartOf="@+id/divider8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_memes_activity"
+
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/memes"
+                    android:textAlignment="center"
+
+                    android:textSize="13sp"
+                    app:icon="@drawable/memes_icon"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider8"
+                    app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_salaAdmin_activity"
+
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/sala_de_admins"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccentDark"
+                    android:textSize="13sp"
+                    app:icon="@drawable/admin_icon"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/divider8"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_log_admin" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_log_admin"
+
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/app_log"
+                    android:textAlignment="center"
+
+                    android:textSize="13sp"
+                    app:icon="@drawable/ic_log_icon"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/divider8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_GerarRelatorio_admin"
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/gerar_relat_rio"
+                    android:textAlignment="center"
+                    android:textSize="13sp"
+
+                    app:icon="@drawable/relatorio"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toStartOf="@+id/divider8"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                     />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_BlockUser_admin"
+
+
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:elevation="16dp"
+                    android:focusable="true"
+                    android:text="@string/bloquear_utilizador"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorRed"
+                    android:textSize="13sp"
+                    app:icon="@drawable/ic_bloquear_logo"
+                    app:iconTintMode="multiply"
+                    app:layout_constraintEnd_toStartOf="@+id/divider8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_BlockUser_admin" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_VisualizarPedidoFuncionalidade" />
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_notificacoes_activity" />
+
+                <View
+                    android:id="@+id/divider8"
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

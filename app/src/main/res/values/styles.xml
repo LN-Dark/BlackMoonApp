@@ -1,0 +1,145 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+        <item name="windowActionBar">false</item>
+        <item name="switchStyle">@style/Widget.MaterialComponents.CompoundButton.Switch</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryVariant">#FFFFFF</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorBackground_light</item>
+        <item name="textColorSearchUrl">@color/colorBackground_light</item>
+        <item name="android:textColorSecondary">@color/md_white_1000</item>
+        <item name="colorSecondary">@color/colorBackground_light</item>
+        <item name="colorSecondaryVariant">#424242</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorError">#F44336</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">@color/colorChatDarker</item>
+        <item name="colorOnSurface">@color/colorBackground_light</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">@color/colorChatLighter</item>
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent</item>
+        <item name="materialButtonStyle">@style/AppButton</item>
+        <item name="textInputStyle">@style/AppTextField</item>
+        <item name="materialCardViewStyle">@style/AppCard</item>
+        <item name="bottomNavigationStyle">@style/AppBottomNavigation</item>
+    </style>
+
+    <style name="AppTheme_Light" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="switchStyle">@style/Widget.MaterialComponents.CompoundButton.Switch</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryVariant">#383838</item>
+        <item name="colorPrimaryDark">#212121</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">@color/md_white_1000</item>
+        <item name="colorSecondary">#212121</item>
+        <item name="colorSecondaryVariant">#424242</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorError">#F44336</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#212121</item>
+        <item name="android:colorBackground">@color/colorBackground_light</item>
+        <item name="colorOnBackground">#212121</item>
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button_Light</item>
+        <item name="shapeAppearanceSmallComponent">@style/AppShapeAppearance.SmallComponent_Light</item>
+        <item name="shapeAppearanceMediumComponent">@style/AppShapeAppearance.MediumComponent_Light</item>
+        <item name="materialButtonStyle">@style/AppButton_Light</item>
+        <item name="textInputStyle">@style/AppTextField_Light</item>
+        <item name="materialCardViewStyle">@style/AppCard_Light</item>
+        <item name="bottomNavigationStyle">@style/AppBottomNavigation_Light</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.FloatingActionButton" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">@null</item>
+    </style>
+
+    <style name="AppCard_Light" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">6dp</item>
+    </style>
+
+    <style name="AppBottomNavigation_Light" parent="Widget.MaterialComponents.BottomNavigationView.Colored" />
+
+    <style name="AppButton_Light" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/disabled_button_light</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTextField_Light" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/colorChatLighter</item>
+    </style>
+
+    <style name="AppShapeAppearance.SmallComponent_Light" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+    <style name="AppShapeAppearance.MediumComponent_Light" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="AppTextAppearance.Button_Light" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AppCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">6dp</item>
+    </style>
+
+    <style name="AppBottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored" />
+
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/disabled_button_dark</item>
+        <item name="android:textColor">@color/md_white_1000</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/colorBackground_light</item>
+    </style>
+
+    <style name="AppShapeAppearance.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+    <style name="AppShapeAppearance.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="AppTextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="NavTitle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:textColor">@color/colorAccentDark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ToolbarTitleAppearance" parent="@style/Widget.MaterialComponents.Toolbar">
+        <item name="android:textSize">16sp</item>
+        <item name="iconSize">30dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ToolbarSubtitleAppearance" parent="@style/Widget.MaterialComponents.Toolbar">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.MaterialComponents" />
+
+
+
+
+
+</resources>

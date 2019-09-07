@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/defenicoessala"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:title="@string/blank">
+        <menu>
+
+            <item android:id="@+id/favoritos_salapublica_btn"
+                android:icon="@drawable/ic_like"
+                android:title="@string/adicionar_aos_favoritos" />
+            <item android:id="@+id/option_publicas_chamadas"
+                android:icon="@drawable/call"
+                android:title="@string/chamadas" />
+            <item android:id="@+id/option_publicas_enviarNotificacao"
+                android:icon="@drawable/toque"
+                android:title="@string/enviar_notifica_o" />
+            <item android:id="@+id/option_publicas_enviarMultimedia"
+                android:icon="@drawable/add_media"
+                android:title="@string/enviar_multim_dia" />
+            <item android:id="@+id/option_publicas_enviarMeme"
+                android:icon="@drawable/memes_icon"
+                android:title="@string/enviar_meme" />
+
+            <item android:id="@+id/reportar_salapublica_btn"
+                android:icon="@drawable/ic_bloquear_logo"
+                android:title="@string/reportar_sala" />
+            <item android:icon="@drawable/admin_icon"
+                android:orderInCategory="102"
+                android:id="@+id/admin_option_sala_publica"
+                android:title="@string/defeni_es">
+                <menu>
+                    <item android:id="@+id/option_publicas_defenicoes"
+                        android:icon="@drawable/defenicoeslogo"
+                        android:title="@string/defeni_es" />
+                    <item android:id="@+id/deixar_de_ser_admin_btn_publica"
+                        android:icon="@drawable/disclaimer"
+                        android:title="@string/deixar_de_ser_admin" />
+                </menu>
+            </item>
+            <item android:id="@+id/sair_salaPublica_BTN"
+                android:icon="@drawable/export"
+                android:title="@string/sair_da_sala"/>
+        </menu>
+    </item>
+    <item
+        android:title="@string/blank"
+        android:id="@+id/action_search"
+        android:icon="@drawable/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+</menu>

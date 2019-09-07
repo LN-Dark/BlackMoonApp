@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/defenicoessala"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:title="@string/blank">
+        <menu>
+            <item android:id="@+id/apagar_all_log"
+                android:icon="@drawable/delete"
+                android:title="@string/apagar_tudo" />
+        </menu>
+    </item>
+</menu>

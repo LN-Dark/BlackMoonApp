@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mensagens"
+            android:icon="@drawable/bros_icon_tabs"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_salasPrivadas"
+            android:icon="@drawable/salasprivadas"
+            android:title="@string/salas_privadas" />
+        <item
+            android:id="@+id/nav_shares"
+            android:icon="@drawable/timeline"
+            android:title="@string/hall_of_fame" />
+        <item
+            android:id="@+id/nav_notificacoes"
+            android:icon="@drawable/process"
+            android:title="@string/notifica_es" />
+    </group>
+
+    <item android:title="@string/defini_es"
+        android:id="@+id/nav_defenicoes">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/info_icon"
+                android:title="@string/info" />
+            <item
+                android:id="@+id/nav_admin"
+                android:icon="@drawable/admin_icon"
+                android:title="@string/admins" />
+            <item
+                android:id="@+id/nav_Swag"
+                android:icon="@drawable/swag_icon"
+                android:title="@string/perfil" />
+            <item
+                android:id="@+id/nav_Criar_sala_privada"
+                android:icon="@drawable/create"
+                android:title="@string/criar_sala_privada" />
+            <item
+                android:id="@+id/nav_sharemyapp"
+                android:icon="@drawable/share"
+                android:title="@string/partilhar_app" />
+            <item
+                android:id="@+id/nav_logOut"
+                android:icon="@drawable/logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+
+
+</menu>

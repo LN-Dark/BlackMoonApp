@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+    <color name="colorRed">#F81212</color>
+    <color name="ColorBlack">#000000</color>
+    <color name="colorGold">#DAA520</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorChatDarker">#161616</color>
+    <color name="colorChatLighter">#414141</color>
+
+    <color name="colorBackground">#000000</color>
+    <color name="colorAccent">#F08010</color>
+    <color name="colorAccentDark">#E87008</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="DividerColor">#3F3F3F</color>
+
+    <color name="colorBackground_light">#FFFFFF</color>
+    <color name="colorAccent_light">#627EC7</color>
+    <color name="colorAccentDark_light">#FFFFFF</color>
+
+    <color name="colorPrimary_light">#303F9F</color>
+    <color name="colorPrimaryDark_light">#000000</color>
+    <color name="DividerColor_light">#3F3F3F</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="foreground_material_dark" tools:override="true">@color/white</color>
+    <color name="foreground_material_light" tools:override="true">@color/black</color>
+    <color name="background_material_dark" tools:override="true">@color/material_grey_850</color>
+    <color name="background_material_light" tools:override="true">@color/material_grey_50</color>
+    <color name="background_floating_material_dark" tools:override="true">@color/material_grey_800</color>
+    <color name="background_floating_material_light" tools:override="true">@color/white</color>
+    <color name="primary_material_dark" tools:override="true">@color/material_grey_900</color>
+    <color name="primary_material_light" tools:override="true">@color/material_grey_100</color>
+    <color name="primary_material_settings">@color/material_blue_grey_900</color>
+    <color name="primary_material_settings_light">@color/material_grey_100</color>
+    <color name="primary_dark_material_dark" tools:override="true">@color/black</color>
+    <color name="primary_dark_material_light" tools:override="true">@color/material_grey_600</color>
+    <color name="primary_dark_material_light_light_status_bar">@color/material_grey_300</color>
+    <color name="primary_dark_material_settings">@color/material_blue_grey_950</color>
+    <color name="primary_dark_material_settings_light">@color/material_grey_300</color>
+    <color name="secondary_material_settings">@color/material_blue_grey_800</color>
+    <color name="secondary_material_settings_light">@color/material_grey_200</color>
+    <color name="tertiary_material_settings">@color/material_blue_grey_700</color>
+    <color name="quaternary_material_settings">@color/material_blue_grey_200</color>
+    <color name="accent_material_light" tools:override="true">@color/material_deep_teal_500</color>
+    <color name="accent_material_dark" tools:override="true">@color/material_deep_teal_200</color>
+    <color name="button_material_dark" tools:override="true">#ff5a595b</color>
+    <color name="button_material_light" tools:override="true">#ffd6d7d7</color>
+    <color name="error_color_material_dark" tools:override="true">#ff7043</color><!-- deep orange 400 -->
+    <color name="error_color_material_light" tools:override="true">#ff5722</color><!-- deep orange 500 -->
+    <color name="switch_thumb_normal_material_dark" tools:override="true">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_light" tools:override="true">#fff1f1f1</color>
+    <color name="switch_thumb_disabled_material_dark" tools:override="true">#ff616161</color>
+    <color name="switch_thumb_disabled_material_light" tools:override="true">#ffbdbdbd</color>
+    <!-- Text & foreground colors -->
+    <eat-comment />
+    <!-- 87% black -->
+    <color name="primary_text_default_material_light" tools:override="true">#de000000</color>
+    <!-- 54% black -->
+    <color name="secondary_text_default_material_light" tools:override="true">#8a000000</color>
+    <!-- 100% white -->
+    <color name="primary_text_default_material_dark" tools:override="true">#ffffffff</color>
+    <!-- 70% white -->
+    <color name="secondary_text_default_material_dark" tools:override="true">#b3ffffff</color>
+    <item name="hint_alpha_material_dark" tools:override="true" format="float" type="dimen">0.50</item>
+    <item name="hint_alpha_material_light" tools:override="true" format="float" type="dimen">0.38</item>
+    <item name="hint_pressed_alpha_material_dark" tools:override="true" format="float" type="dimen">0.70</item>
+    <item name="hint_pressed_alpha_material_light" tools:override="true" format="float" type="dimen">0.54</item>
+    <item name="disabled_alpha_material_light" tools:override="true" format="float" type="dimen">0.26</item>
+    <item name="disabled_alpha_material_dark" tools:override="true" format="float" type="dimen">0.30</item>
+    <item name="primary_content_alpha_material_dark" format="float" type="dimen">1</item>
+    <item name="primary_content_alpha_material_light" format="float" type="dimen">0.87</item>
+    <item name="secondary_content_alpha_material_dark" format="float" type="dimen">.7</item>
+    <item name="secondary_content_alpha_material_light" format="float" type="dimen">0.54</item>
+    <item name="highlight_alpha_material_light" tools:override="true" format="float" type="dimen">0.10</item>
+    <item name="highlight_alpha_material_dark" tools:override="true" format="float" type="dimen">0.10</item>
+    <item name="highlight_alpha_material_colored" tools:override="true" format="float" type="dimen">0.10</item>
+    <!-- Primary & accent colors -->
+    <eat-comment />
+    <color name="material_grey_900" tools:override="true">#ff212121</color>
+    <color name="material_grey_850" tools:override="true">#ff303030</color>
+    <color name="material_grey_800" tools:override="true">#ff424242</color>
+    <color name="material_grey_600" tools:override="true">#ff757575</color>
+    <color name="material_grey_300" tools:override="true">#ffe0e0e0</color>
+    <color name="material_grey_200" tools:override="true">#ffeeeeee</color>
+    <color name="material_grey_100" tools:override="true">#fff5f5f5</color>
+    <color name="material_grey_50" tools:override="true">#fffafafa</color>
+    <color name="material_deep_teal_100">#ffb2dfdb</color>
+    <color name="material_deep_teal_200" tools:override="true">#ff80cbc4</color>
+    <color name="material_deep_teal_300">#ff4db6ac</color>
+    <color name="material_deep_teal_500" tools:override="true">#ff008577</color>
+    <color name="material_blue_grey_200">#ffb0bec5</color>
+    <color name="material_blue_grey_700">#ff455a64</color>
+    <color name="material_blue_grey_800" tools:override="true">#ff37474f</color>
+    <color name="material_blue_grey_900" tools:override="true">#ff263238</color>
+    <color name="material_blue_grey_950" tools:override="true">#ff21272b</color>
+    <color name="material_red_A100">#ff8a80</color>
+    <color name="material_red_A700">#d50000</color>
+    <!-- Time picker defaults when no theme is set -->
+    <eat-comment />
+    <color name="timepicker_default_background_material">@color/primary_text_default_material_light</color>
+    <color name="timepicker_default_text_color_material">@color/black</color>
+    <color name="timepicker_default_ampm_selected_background_color_material">@color/material_deep_teal_200</color>
+    <color name="timepicker_default_ampm_unselected_background_color_material">@color/colorTransparent</color>
+    <color name="timepicker_default_selector_color_material">@color/material_deep_teal_200</color>
+    <color name="timepicker_default_numbers_background_color_material">@color/colorTransparent</color>
+    <!-- DatePicker colors -->
+    <eat-comment />
+    <color name="datepicker_default_header_selector_background_material_light">@color/white</color>
+    <color name="datepicker_default_header_selector_background_material_dark">#ff303030</color>
+    <color name="datepicker_default_header_dayofweek_background_color_material_light">#999999</color>
+    <color name="datepicker_default_header_dayofweek_background_color_material_dark">@color/white</color>
+    <color name="datepicker_default_normal_text_color_material_light">#ff999999</color>
+    <color name="datepicker_default_normal_text_color_material_dark">@android:color/white</color>
+    <color name="datepicker_default_disabled_text_color_material_light">#80999999</color>
+    <color name="datepicker_default_disabled_text_color_material_dark">#80999999</color>
+    <color name="datepicker_default_selected_text_color_material_light">#ff33b5e5</color>
+    <color name="datepicker_default_selected_text_color_material_dark">#ff33b5e5</color>
+    <color name="datepicker_default_pressed_text_color_material_light">#ff0099cc</color>
+    <color name="datepicker_default_pressed_text_color_material_dark">#ff0099cc</color>
+    <color name="datepicker_default_circle_background_color_material_light">@color/material_deep_teal_500</color>
+    <color name="datepicker_default_circle_background_color_material_dark">@color/material_deep_teal_200</color>
+    <color name="datepicker_default_view_animator_color_material_light">#fff2f2f2</color>
+    <color name="datepicker_default_view_animator_color_material_dark">#ff303030</color>
+    <!-- Autofill colors -->
+    <color name="autofill_background_material_dark">@color/material_blue_grey_900</color>
+    <color name="autofill_background_material_light">@color/material_grey_50</color>
+
+
+</resources>
