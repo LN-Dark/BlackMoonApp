@@ -53,13 +53,13 @@ android {
         debug {
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
-            storeFile file('C:\\Users\\Dark\\Documents\\AndroidStudioProjects\\keyStore.jks')
+            storeFile file('/home/darknesslight/AndroidStudioProjects/keyStore.jks')
             storePassword keystoreProperties['storePassword']
         }
         release {
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
-            storeFile file('C:\\Users\\Dark\\Documents\\AndroidStudioProjects\\keyStore.jks')
+            storeFile file('/home/darknesslight/AndroidStudioProjects/keyStore.jks')
             storePassword keystoreProperties['storePassword']
         }
     }
@@ -71,7 +71,6 @@ android {
         versionCode 2
         versionName = '2.12.' + versionBuild
         setProperty("archivesBaseName", "_Lua_Negra_" + buildTime())
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.release
         vectorDrawables.useSupportLibrary = true
         maxSdkVersion 29
@@ -86,7 +85,7 @@ android {
     lintOptions {
         checkReleaseBuilds false
     }
-    buildToolsVersion = '29.0.1'
+    buildToolsVersion = '29.0.2'
     compileOptions {
         targetCompatibility = 1.8
     }
@@ -105,16 +104,16 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.navigation:navigation-fragment:2.1.0'
-    implementation 'com.google.android.material:material:1.1.0-alpha10'
-    implementation 'com.google.firebase:firebase-auth:19.0.0'
-    implementation 'com.google.firebase:firebase-database:19.0.0'
-    implementation 'com.google.firebase:firebase-storage:19.0.0'
-    implementation 'com.google.firebase:firebase-core:17.2.0'
-    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-messaging:20.0.1'
     implementation 'com.google.android.gms:play-services-auth:17.0.0'
     implementation 'com.android.volley:volley:1.1.1'
     implementation 'androidx.navigation:navigation-ui:2.1.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0-beta04'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.android.exoplayer:exoplayer:2.9.6'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
